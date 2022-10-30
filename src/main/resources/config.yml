@@ -1,0 +1,120 @@
+# Block coordinates must be whole numbers
+y-coordinate-of-fall:
+countdown-seconds: 3
+move-during-countdown: false
+in-course-music: false
+player-start-locations:
+ 0:
+  x:
+  y:
+  z:
+  jaw:
+  pitch :
+ 1:
+  x:
+  y:
+  z:
+  jaw:
+  pitch :
+ 2:
+  x:
+  y:
+  z:
+  jaw:
+  pitch :
+ 3:
+  x:
+  y:
+  z:
+  jaw:
+  pitch :
+ 4:
+  x:
+  y:
+  z:
+  jaw:
+  pitch :
+ 5:
+  x:
+  y:
+  z:
+  jaw:
+  pitch :
+ 6:
+  x:
+  y:
+  z:
+  jaw:
+  pitch :
+ 7:
+  x:
+  y:
+  z:
+  jaw:
+  pitch :
+ 8:
+  x:
+  y:
+  z:
+  jaw:
+  pitch :
+ 9:
+  x:
+  y:
+  z:
+  jaw:
+  pitch :
+finish-blocks-locations:
+ 0:
+  x:
+  y:
+  z:
+ 1:
+  x:
+  y:
+  z:
+ 2:
+  x:
+  y:
+  z:
+ 3:
+  x:
+  y:
+  z:
+ 4:
+  x:
+  y:
+  z:
+ 5:
+  x:
+  y:
+  z:
+ 6:
+  x:
+  y:
+  z:
+ 7:
+  x:
+  y:
+  z:
+ 8:
+  x:
+  y:
+  z:
+ 9:
+  x:
+  y:
+  z:
+leave-command-location:
+ x:
+ y:
+ z:
+ yaw:
+ pitch:
+
+#Database connection credentials:
+host:
+port:
+database:
+user:
+password:

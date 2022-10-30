@@ -4,3 +4,8 @@ main: com.vsepecan.parkour.Parkour
 api-version: 1.19
 authors: [ Vasilije_Sepecan ]
 description: Multiplayer Parkour Game
+commands:
+  parkour:
+    usage: "Usage: /<parkour>"
+  leaveparkour:
+    usage: "Usage: /<leaveparkour>"
