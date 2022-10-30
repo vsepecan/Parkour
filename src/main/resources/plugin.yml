@@ -1,0 +1,6 @@
+name: Parkour
+version: '${project.version}'
+main: com.vsepecan.parkour.Parkour
+api-version: 1.19
+authors: [ Vasilije_Sepecan ]
+description: Multiplayer Parkour Game
