@@ -40,12 +40,14 @@ public class LeaveParkourCommand implements CommandExecutor {
 
                 player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(""));
                 player.sendTitle("", "", 10, 70, 20);
-
+/*
                 try {
                     parkour.getCourse().writeIntoDB(player, -1, parkour.getCourse().getCheckpointIndexHashMap().get(player.getUniqueId()));
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
+                
+ */
             } else if (parkour.getCourse().getCountdownHashMap().get(player.getUniqueId()) != null) {
                 parkour.getCourse().getCountdownHashMap().get(player.getUniqueId()).cancel();
                 parkour.getCourse().getCountdownHashMap().remove(player.getUniqueId());

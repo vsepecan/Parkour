@@ -34,11 +34,12 @@ public final class Parkour extends JavaPlugin implements Listener {
 		Objects.requireNonNull(getCommand("parkour")).setExecutor(new ParkourCommand(this));
 		Objects.requireNonNull(getCommand("leaveparkour")).setExecutor(new LeaveParkourCommand(this));
 	}
-	
+	/*
 	@Override
 	public void onDisable() {
 		course.getDBConnection().disconnect();
 	}
+	 */
 	
 	@EventHandler
 	public void onPlayerQuit (PlayerQuitEvent e) {

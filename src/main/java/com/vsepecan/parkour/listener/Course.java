@@ -36,7 +36,7 @@ public class Course implements Listener {
     HashMap<UUID, Countdown> countdownHashMap;
     HashMap<UUID, Integer> checkpointIndexHashMap;
 
-    private final DBConnection dbConnection;
+    //private final DBConnection dbConnection;
 
     public Course(Parkour parkour) {
         this.parkour = parkour;
@@ -45,11 +45,11 @@ public class Course implements Listener {
         countdownHashMap = new HashMap<>();
         checkpointIndexHashMap = new HashMap<>();
 
-        dbConnection = new DBConnection();
+        //dbConnection = new DBConnection();
     }
 
     @EventHandler
-    public void onPlayerMove(PlayerMoveEvent e) throws SQLException {
+    public void onPlayerMove(PlayerMoveEvent e) /*throws SQLException*/ {
         Player player = e.getPlayer();
         Location playerLocation = player.getLocation();
         Location standingBlockLocation = playerLocation.getBlock().getRelative(BlockFace.DOWN).getLocation();
@@ -69,7 +69,7 @@ public class Course implements Listener {
                     player.sendTitle(ChatColor.GREEN + "Good job!",
                             ChatColor.GREEN + "Your time is " + liveGameTimerHashMap.get(player.getUniqueId()).getDisplay(), 10, 70, 20);
 
-                    writeIntoDB(player, liveGameTimerHashMap.get(player.getUniqueId()).getSeconds(), ConfigManager.getFinishBlocksLocations().size());
+                    //writeIntoDB(player, liveGameTimerHashMap.get(player.getUniqueId()).getSeconds(), ConfigManager.getFinishBlocksLocations().size());
 
                     checkpointIndexHashMap.remove(player.getUniqueId());
                     liveGameTimerHashMap.get(player.getUniqueId()).cancel();
@@ -95,7 +95,7 @@ public class Course implements Listener {
             event.setCancelled(true);
         }
     }
-
+/*
     public void writeIntoDB(Player player, float currentTime, int currentLevel) throws SQLException {
         // Write the best time or level of the current day
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
@@ -146,7 +146,7 @@ public class Course implements Listener {
     }
 
     public DBConnection getDBConnection() { return dbConnection; }
-
+*/
     public HashMap<UUID, LiveGameTimer> getLiveGameTimerHashMap() { return liveGameTimerHashMap; }
     public HashMap<UUID, Countdown> getCountdownHashMap() { return countdownHashMap; }
     public HashMap<UUID, Integer> getCheckpointIndexHashMap() { return checkpointIndexHashMap; }
